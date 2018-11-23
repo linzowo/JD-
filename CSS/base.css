@@ -1,0 +1,126 @@
+/* 公共样式 */
+
+/* 版心 */
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after {
+    visibility:hidden;
+    clear:both;
+    display:block;
+    content:"";
+    height:0
+}
+.clearfix {
+    *zoom:1
+}
+body {
+  background-color: #F0F3EF;
+}
+.w {
+    width: 1190px;
+    margin: auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+a {
+  text-decoration: none;
+}
+i {
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+.iconfont {
+  font-family: 'icomoon';
+  font-style: normal;
+}
+.style-red {
+  color: #f10215!important;
+  font-style: normal;
+}
+/* 声明字体图标 */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?rrg3k2');
+  src:  url('../fonts/icomoon.eot?rrg3k2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?rrg3k2') format('truetype'),
+    url('../fonts/icomoon.woff?rrg3k2') format('woff'),
+    url('../fonts/icomoon.svg?rrg3k2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 头部导航栏开始 */
+.shortcut {
+  height: 30px;
+  background-color: #E3E4E5;
+  border-bottom: 1px solid #DDDDDD;
+  line-height: 28px;
+}
+.shortcut a {
+  font: 12px Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+  color: #B9B9BA;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 2px;
+}
+.shortcut a:hover {
+  color: #f10215;
+}
+.shortcut .fl {
+  margin-left: 200px;
+}
+.shortcut .fl li {
+  position: relative;
+  font: 12px/28px Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+  color: #B9B9BA;
+}
+.shortcut .iconfont {
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.shortcut .fr {
+  position: relative;
+}
+.shortcut .fr li {
+  float: left;
+}
+.shortcut .fr .spacer {
+  margin: 10px 10px;
+  height: 10px;
+  width: 1px;
+  background-color: #B9B9BA;
+}
+.shortcut .shortcut_drapdown {
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  color: #B9B9BA;
+  margin-left: -8px;
+  position: relative;
+  top: 1px;
+}
+.shortcut .mobile_static {
+  padding: 0;
+  margin: 2px;
+  border: 1px solid #CFCFCF;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 66px;
+  height: 66px;
+  z-index: 999999;
+  background: url(../images/mobile_qrcode.png) no-repeat 50% 50%;
+}
+/* 头部导航栏结束 */
