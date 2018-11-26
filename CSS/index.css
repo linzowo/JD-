@@ -133,9 +133,9 @@
 .header .settleup .shopping_amount {
     position: absolute;
     top: 4px;
-    width: 14px;
     height: 14px;
-    border-radius: 50%;
+    padding: 0 3px;
+    border-radius: 8px;
     background-color: #f10215;
     line-height: 14px;
     text-align: center;
@@ -156,16 +156,17 @@
     margin-right: 25px;
 }
 .navitems a {
-    color: #4D4D4D;
+    color: #333;
     font-size: 14px;
 }
 .navitems a:hover {
     color: #f10215;
 }
 .navitems .spacer {
-    margin: 5px 10px 0 -5px;
+    margin: 5px 15px 0 -5px;
     height: 10px;
     width: 1px;
     background-color: #CCCCCC;
+    float: left;
   }
 /* 头部 主体 结束 */

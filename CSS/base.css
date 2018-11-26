@@ -17,6 +17,7 @@
 }
 body {
   background-color: #F0F3EF;
+  height: 2000px;
 }
 .w {
     width: 1190px;
@@ -30,6 +31,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #666;
 }
 i {
   font-style: normal;
@@ -124,3 +126,187 @@ input {
   background: url(../images/mobile_qrcode.png) no-repeat 50% 50%;
 }
 /* 头部导航栏结束 */
+/* the footer start */
+/* the service part */
+.mod_service {
+  padding: 30px 0;
+  border-bottom: 1px solid #DEDEDE;
+}
+.mod_service li {
+  float: left;
+}
+.mod_service p {
+  float: left;
+}
+.mod_service li {
+  width: 297px;
+}
+.mod_service li div {
+  position: relative;
+  width: 180px;
+  margin: 0 auto;
+  padding-left: 45px;
+}
+.mod_service li h5 {
+  position: absolute;
+  left: 0;
+  width: 36px;
+  height: 42px;
+  text-indent: -99999px;
+  overflow: hidden;
+  background: url(../images/sprite.footer@2x.png) no-repeat;
+  background-size: 113px 86.5px;
+}
+.mod_service li .kuai {
+  background-position: -38px 0;
+}
+.mod_service li .hao {
+  background-position: -77px 0;
+}
+.mod_service li .sheng {
+  background-position: 0px -45px;
+}
+.mod_service li p {
+  height: 42px;
+  line-height: 42px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #444;
+}
+/* the help part */
+.mod_help {
+  height: 200px;
+}
+.mod_help .w {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #DEDEDE;
+}
+.help_nav_tit {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+  display: block;
+}
+.mod_help a {
+  display: block;
+  font-size: 12px;
+}
+.mod_help .fl {
+  width: 198px;
+  line-height: 22px;
+}
+.mod_help .fr {
+  width: 200px;
+  height: 150px;
+  line-height: 22px;
+  background: url(../images/sprite.footer.png) no-repeat;
+}
+.mod_help .fr div {
+  padding: 0 10px;
+  overflow: hidden;
+}
+.mod_help .fr h5 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.mod_help .fr p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+}
+.mod_help .fr a {
+  display: inline;
+}
+.mod_help .mod_help_cover_more {
+  width: 180px;
+  text-align: right;
+}
+.mod_help .fr a:hover {
+  color: #f10215;
+}
+/* the copyright part */
+/* the mod_copyright_links part */
+.mod_copyright .w {
+  padding: 20px 0;
+}
+.mod_copyright p {
+  width: 1190px;
+  text-align: center;
+  font-size: 12px;
+}
+.mod_copyright .w a:hover {
+  color: #f10215;
+}
+.mod_copyright .mod_copyright_links a {
+  color: #666;
+}
+.mod_copyright .spacer {
+  margin: 0 10px;
+  color: #ccc;
+}
+/* the mod_copyright_info part */
+.mod_copyright .mod_copyright_info {
+  padding: 15px 0;
+}
+.mod_copyright .mod_copyright_info p {
+  display: block;
+  padding: 5px 0;
+}
+.mod_copyright .mod_copyright_info a,span {
+  color: #999;
+}
+.mod_copyright_info a i {
+  display: inline-block;
+  vertical-align: -1px;
+  margin-right: 10px;
+  width: 15px;
+  height: 12px;
+  background: url(../images/sprite.footer@2x.png) no-repeat;
+  background-size: 113px 86.5px;
+}
+.mod_copyright_info a .Global {
+  background-position: -38.5px -44.5px;
+}
+.mod_copyright_info a .rissia {
+  background-position: -56px -44.5px;
+}
+.mod_copyright_info a .indonesia {
+  background-position: -73.5px -44.5px;
+}
+.mod_copyright_info a .spain {
+  background-position: -38.5px -59px;
+}
+.mod_copyright_info a .thailand {
+  background-position: -91px -44.5px;
+}
+/* the mod_copyright_auth part */
+.mod_copyright_auth {
+  text-align: center;
+  margin: 25px 0; 
+}
+.mod_copyright_auth a {
+  display: inline-block;
+  margin: 0 3px;
+  width: 103px;
+  height: 32px;
+  overflow: hidden;
+  text-indent: -99999px;
+  background: url(../images/sprite.footer.png) no-repeat;
+}
+.mod_copyright_auth .kexin {
+  background-position: -205px -111px;
+}
+.mod_copyright_auth .wangjing {
+  background-position: -205px -74px;
+}
+.mod_copyright_auth .chengxin {
+  background-position: -205px -37px;
+}
+.mod_copyright_auth .jubao {
+  background-position: -205px 0px;
+}
+.mod_copyright_auth .appxiazai {
+  background-position: -205px -148px;
+}
+/* the footer end */
