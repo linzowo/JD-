@@ -144,8 +144,10 @@
     right: 64px;
     width: 19px;
     height: 15px;
-    cursor: pointer;
     background: url(../images/sprite-photo-search.png) no-repeat;
+}
+.header .search .upload-bg:hover {
+    background-position: -30px 0px;
 }
 /* 热词部分 */
 .hotwords {
@@ -276,6 +278,13 @@
     margin: 0 10px;
     position: relative;
 }
+.jd-col2 ul li{
+    position: absolute;
+    display: none;
+}
+.jd-col2 ul li:nth-child(1){
+    display: block;
+}
 .jd .jd-col2 ol {
     width: 153px;
     height: 20px;
@@ -283,15 +292,20 @@
     bottom: 20px;
     left: 50px;
 }
-.jd-col2 ol a {
+.jd-col2 ol li{
+    overflow: hidden;
     float: left;
     margin: 4px 4px;
+    border-radius: 50%;
+}
+.jd-col2 ol a {
+    float: left;
     height: 8px;
     width: 8px;
     border: 1px solid #fff;
     border-radius: 50%;
 }
-.jd-col2 ol .current {
+.jd-col2 ol li.current {
     margin: 2px 4px;
     width: 10px;
     height: 10px;
@@ -301,20 +315,27 @@
 .jd-col2 .arr a {
     position: absolute;
     line-height: 40px;
-    font-size: 28px;
-    width: 25px;
+    font-size: 20px;
+    width: 24px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.jd-col2 .arr a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
 }
 .jd-col2 .arr .arr-l {
     left: 0;
     top: 50%;
     margin-top: -20px;
+    text-align: right;
 }
 .jd-col2 .arr .arr-r {
     right: 0;
     top: 50%;
     margin-top: -20px;
+    text-align: left;
 }
 /* the rec item part */
 .jd .jd-col3 {
@@ -329,6 +350,9 @@
 }
 .rec_item img {
     width: 100%;
+}
+.rec_item img:hover {
+    opacity: .8;
 }
 /* the jd-right part */
 /* the user part */
