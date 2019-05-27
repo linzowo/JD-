@@ -1,0 +1,2567 @@
+<div class="J_tab_content service_pop">
+  <div class="mod_tab_content_item service_pop_item" style="display: block;">
+    <iframe
+      width="160"
+      height="180"
+      frameborder="0"
+      scrolling="no"
+      src="//chongzhi.jd.com/jdhome-czindex-2017.html"
+    ></iframe>
+  </div>
+  <div class="mod_tab_content_item service_pop_item" style="display: none;">
+    <style>
+      /* virtuals-squares/2.0/ jipiao.css Date:2018-01-03 16:44:06 */
+      #squares-jipiao {
+        width: 160px;
+        height: 180px;
+        color: #666;
+        font-family: "Microsoft Yahei";
+      }
+      #squares-jipiao .loading-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 199px;
+        height: 120px;
+        margin: -60px 0 0 -100px;
+      }
+      #squares-jipiao .squares-tab {
+        padding: 12px 0 0;
+        position: static;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+      }
+      #squares-jipiao .squares-tab li {
+        float: left;
+        position: relative;
+        display: inline;
+        line-height: 16px;
+        *line-height: 18px;
+        white-space: nowrap;
+        height: 21px;
+        margin-right: 10px;
+        *margin-right: 2px;
+        width: auto;
+        border: 0;
+        overflow: auto;
+        cursor: default;
+      }
+      #squares-jipiao .squares-tab li a {
+        text-decoration: none;
+        line-height: 18px;
+        display: inline;
+        padding-top: 0;
+        text-align: left;
+      }
+      #squares-jipiao .squares-tab li.last {
+        margin-right: 0;
+      }
+      #squares-jipiao .squares-tab li.current a {
+        color: #e40015;
+      }
+      #squares-jipiao .squares-main {
+        padding: 5px 0 0;
+        position: relative;
+        zoom: 1;
+        height: 138px;
+      }
+      #squares-jipiao .squares-content {
+        width: 160px;
+        height: 138px;
+        overflow: hidden;
+        position: relative;
+        zoom: 1;
+      }
+      #squares-jipiao .tab-content {
+        width: 696px;
+        height: 138px;
+        overflow: hidden;
+      }
+      #squares-jipiao .jp-content {
+        float: left;
+        display: inline;
+        height: 138px;
+        width: 190px;
+        border: 0;
+        overflow: hidden;
+        cursor: default;
+      }
+      #squares-jipiao .select-type {
+        margin-bottom: 10px;
+        _height: 15px;
+        _overflow: hidden;
+      }
+      #squares-jipiao .select-type label {
+        float: left;
+        display: inline;
+        margin-right: 15px;
+        height: 15px;
+        line-height: 15px;
+      }
+      #squares-jipiao .select-type label input {
+        height: 13px;
+        margin: 0;
+        margin-right: 8px;
+        vertical-align: bottom;
+        _display: inline;
+        _margin-top: -3px;
+        _margin-right: -5px;
+      }
+      #squares-jipiao .city-area,
+      #squares-jipiao .date-area {
+        float: left;
+        display: inline;
+        width: 130px;
+        height: 20px;
+        position: relative;
+        zoom: 1;
+        _width: auto;
+        _height: auto;
+      }
+      #squares-jipiao .city-area .end-city,
+      #squares-jipiao .city-area .end-date,
+      #squares-jipiao .city-area .start-city,
+      #squares-jipiao .city-area .start-date,
+      #squares-jipiao .date-area .end-city,
+      #squares-jipiao .date-area .end-date,
+      #squares-jipiao .date-area .start-city,
+      #squares-jipiao .date-area .start-date {
+        width: 120px;
+        height: 18px;
+        line-height: 18px;
+        border: 1px solid #e7e7e7;
+        color: #c2c2c2;
+        margin-left: 30px;
+        text-align: center;
+        font-family: "Microsoft Yahei";
+      }
+      #squares-jipiao .city-area .start-date,
+      #squares-jipiao .date-area .start-date {
+        *margin-left: 28px;
+      }
+      #squares-jipiao .city-area .end-date,
+      #squares-jipiao .date-area .end-date {
+        display: none;
+      }
+      #squares-jipiao .city-area .end-city:hover,
+      #squares-jipiao .city-area .end-date:hover,
+      #squares-jipiao .city-area .start-city:hover,
+      #squares-jipiao .city-area .start-date:hover,
+      #squares-jipiao .date-area .end-city:hover,
+      #squares-jipiao .date-area .end-date:hover,
+      #squares-jipiao .date-area .start-city:hover,
+      #squares-jipiao .date-area .start-date:hover {
+        border-color: #338fff;
+        z-index: 5;
+        position: relative;
+      }
+      #squares-jipiao .city-area .end-city:focus,
+      #squares-jipiao .city-area .end-date:focus,
+      #squares-jipiao .city-area .start-city:focus,
+      #squares-jipiao .city-area .start-date:focus,
+      #squares-jipiao .date-area .end-city:focus,
+      #squares-jipiao .date-area .end-date:focus,
+      #squares-jipiao .date-area .start-city:focus,
+      #squares-jipiao .date-area .start-date:focus {
+        outline: 0;
+      }
+      #squares-jipiao .city-area .end-date,
+      #squares-jipiao .city-area .start-date,
+      #squares-jipiao .date-area .end-date,
+      #squares-jipiao .date-area .start-date {
+        font-family: "Microsoft Yahei";
+      }
+      #squares-jipiao .city-area .date-hover,
+      #squares-jipiao .date-area .date-hover {
+        border: 1px solid #c81623;
+        border-bottom: 1px solid #fff;
+      }
+      #squares-jipiao .city-area .area-title,
+      #squares-jipiao .date-area .area-title {
+        height: 20px;
+        line-height: 20px;
+        color: #666;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 30px;
+      }
+      #squares-jipiao .last-city-area {
+        top: -2px;
+      }
+      #squares-jipiao .back-date {
+        margin-left: 26px;
+      }
+      #squares-jipiao .change-city {
+        position: relative;
+        float: left;
+        display: inline;
+        width: 18px;
+        height: 18px;
+        top: 12px;
+        right: -12px;
+        z-index: 9;
+        background: url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/change-city.png)
+          no-repeat 0 0;
+        cursor: pointer;
+        _font-size: 200px;
+        _overflow: hidden;
+      }
+      #squares-jipiao .select-city {
+        _height: 27px;
+        _overflow: hidden;
+      }
+      #squares-jipiao .select-date {
+        margin: 10px 0;
+      }
+      #squares-jipiao .select-date .date-area {
+        *margin-top: 5px;
+      }
+      #squares-jipiao .select-date .date-area .start-date {
+        width: 128px;
+      }
+      @-moz-document url-prefix() {
+        #squares-jipiao .select-date .date-area .start-date {
+          width: 126px;
+        }
+      }
+      #squares-jipiao .search-jp {
+        height: 20px;
+      }
+      #squares-jipiao .search-jp .search-jp-btn {
+        float: left;
+        width: 58px;
+        height: 20px;
+        line-height: 18px;
+        color: #fff;
+        text-align: center;
+        background-color: #e40015;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        margin-right: 6px;
+        padding: 0;
+        border-radius: 10px;
+      }
+      #squares-jipiao .search-jp .search-tip {
+        outline: 0;
+        color: #527cdb;
+        line-height: 20px;
+        display: inline;
+        padding-top: 0;
+        text-align: left;
+      }
+      #squares-jipiao .search-jp .search-tip:hover {
+        color: #c81623;
+      }
+      #squares-jipiao .search-jp .search-tip:hover .search-tip-icon {
+        background-image: url(//misc.360buyimg.com/virtuals/squares/1.0/css/i/arrow-news-hover.png);
+      }
+      #squares-jipiao .search-jp .search-tip-icon {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 7px;
+        height: 11px;
+        background: url(//misc.360buyimg.com/virtuals/squares/1.0/css/i/arrow-news.png)
+          no-repeat 0 0;
+        text-indent: -999em;
+        vertical-align: middle;
+        _margin-bottom: -7px;
+        _position: relative;
+        _bottom: -2px;
+      }
+      #squares-jipiao .search-jp .gj-word-ad,
+      #squares-jipiao .search-jp .gn-word-ad {
+        display: inline-block;
+        width: 105px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      #squares-jipiao .search-jp .squares-new {
+        display: none;
+      }
+      #squares-jipiao .jp-ads {
+        width: 160px;
+        padding: 5px 9px 0 0;
+      }
+      #squares-jipiao .jp-ads a {
+        display: inline;
+        width: auto;
+        height: auto;
+        padding: 0;
+        line-height: normal;
+        text-align: left;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      #squares-jipiao .jp-ads img {
+        width: 75px !important;
+        height: 96px !important;
+      }
+      #squares-jipiao .start-date {
+        letter-spacing: -1px;
+      }
+      #squares-jipiao .return-date {
+        width: 168px !important;
+      }
+      #squares-jipiao .return-date .start-date {
+        float: left;
+        width: 63px !important;
+        *margin-top: 1px;
+        letter-spacing: -1px;
+      }
+      #squares-jipiao .return-date .end-date {
+        float: left;
+        display: inline;
+        width: 64px !important;
+        *margin-top: 1px;
+        margin-left: -1px;
+        letter-spacing: -1px;
+      }
+      @-moz-document url-prefix() {
+        #squares-jipiao .return-date .start-date {
+          width: 64px !important;
+        }
+      }
+      body .squares-jipiao-calendar {
+        border-radius: 0;
+        border-color: #ddd;
+        margin-top: -1px;
+        font-family: "Microsoft Yahei";
+        padding: 6px 2px;
+        padding-bottom: 0;
+        height: 253px;
+        overflow: hidden;
+      }
+      body .squares-jipiao-calendar tfoot {
+        display: none;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table {
+        border-collapse: collapse;
+      }
+      body .squares-jipiao-calendar .ui-calendar-left {
+        border-right: 0;
+        margin-right: 10px;
+      }
+      body .squares-jipiao-calendar .ui-calendar-double .ui-calendar-left {
+        border-right: 0;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table th {
+        font-weight: 400;
+        color: #666;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table .next i,
+      body .squares-jipiao-calendar .ui-calendar-table .prev i {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 5px;
+        height: 9px;
+        background: url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/calendar.jpg)
+          no-repeat 0 0;
+        float: left;
+        margin-left: 3px;
+        margin-top: -7px;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table .next,
+      body .squares-jipiao-calendar .ui-calendar-table .prev {
+        padding: 5px 0;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table .next:hover i,
+      body .squares-jipiao-calendar .ui-calendar-table .prev:hover i {
+        background-image: url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/calendar-hover.png);
+      }
+      body .squares-jipiao-calendar .ui-calendar-table .switch {
+        position: relative;
+        top: -3px;
+        font-size: 14px;
+        color: #666;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table .next i {
+        background-position: -5px 0;
+        float: right;
+        margin-right: 3px;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table .next:hover,
+      body .squares-jipiao-calendar .ui-calendar-table .prev:hover {
+        background: #fff;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table td,
+      body .squares-jipiao-calendar .ui-calendar-table th {
+        border-radius: 0;
+        padding: 3px 5px;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table td {
+        padding: 5px;
+        border-bottom: 1px dotted #ececec;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table tbody td {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table tbody td a {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 34px;
+        height: 21px;
+        line-height: 21px;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table .active,
+      body .squares-jipiao-calendar .ui-calendar-table .active .festival,
+      body .squares-jipiao-calendar .ui-calendar-table .active:hover {
+        background: 0 0;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table .active a,
+      body .squares-jipiao-calendar .ui-calendar-table .active:hover a {
+        background: #c81623;
+        color: #fff;
+      }
+      body .squares-jipiao-calendar .calendar-date {
+        background-color: #f5f5f5;
+      }
+      body .squares-jipiao-calendar .calendar-date th {
+        padding: 8px 0;
+        border-bottom: 1px solid #ececec;
+        border-top: 1px dotted #e4e4e4;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table tbody .range,
+      body .squares-jipiao-calendar .ui-calendar-table tbody .range .festival {
+        color: #999;
+      }
+      body .squares-jipiao-calendar .ui-calendar-table td {
+        width: 34px;
+      }
+      body .squares-jipiao-calendar .squares-jipiao-styleline {
+        position: absolute;
+        width: 101px;
+        height: 0;
+        line-height: 0;
+        border-top: 1px solid #fff;
+        left: 11px;
+        top: -1px;
+        z-index: 100;
+      }
+      .squares-jipiao-layer {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        width: 350px;
+        background: #fff;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        margin-top: -1px;
+      }
+      .squares-jipiao-layer a:link,
+      .squares-jipiao-layer a:visited {
+        text-decoration: none;
+        color: #666;
+      }
+      .squares-jipiao-layer .tab {
+        padding-left: 10px;
+        height: 21px;
+        overflow: visible;
+        _overflow: hidden;
+      }
+      .squares-jipiao-layer .tab a:link,
+      .squares-jipiao-layer .tab a:visited {
+        font-size: 12px;
+        color: #666;
+      }
+      .squares-jipiao-layer .tab li {
+        display: inline;
+        position: relative;
+        _zoom: 1;
+        width: 54px;
+        float: left;
+        margin-right: 1px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        background-color: #e6e6e6;
+        overflow: hidden;
+      }
+      .squares-jipiao-layer .tab li.curr {
+        height: 20px;
+        background: #c81623;
+      }
+      .squares-jipiao-layer .tab li.curr a:link,
+      .squares-jipiao-layer .tab li.curr a:visited {
+        font-size: 12px;
+        color: #fff;
+      }
+      .squares-jipiao-layer .text {
+        padding: 5px;
+      }
+      .squares-jipiao-layer .mc1 {
+        padding: 7px 0 5px 12px;
+        overflow: hidden;
+      }
+      .squares-jipiao-layer .mc1 a {
+        float: left;
+        width: 64px;
+        text-indent: 6px;
+        line-height: 23px;
+        height: 23px;
+        margin-bottom: 2px;
+        overflow: hidden;
+      }
+      .squares-jipiao-layer .mc1 a:hover {
+        color: #c81623;
+      }
+      .squares-jipiao-layer .mc1 .fl {
+        width: 9px;
+        line-height: 24px;
+        color: #c00;
+        margin-left: 3px;
+      }
+      .squares-jipiao-layer .mc1 .fn {
+        overflow: hidden;
+      }
+      .squares-jipiao-layer .mc1 .clr {
+        border-top: 1px dotted #e6e6e6;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .squares-jipiao-layer .mt_text {
+        padding: 8px 10px 2px;
+        line-height: 26px;
+        color: #999;
+      }
+      body .squares-jipiao-suggest {
+        border: 1px solid #ccc;
+        margin-top: -1px;
+      }
+      body .squares-jipiao-suggest .ac_result_tip {
+        display: none;
+      }
+      body .squares-jipiao-suggest .ac_result_null {
+        background: #fff;
+        padding-left: 2px;
+        color: #c81623;
+      }
+      body .squares-jipiao-suggest li {
+        border: 0;
+      }
+      body .squares-jipiao-suggest li a {
+        color: #000;
+        padding: 3px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      body .squares-jipiao-suggest li a span {
+        display: none;
+      }
+      body .squares-jipiao-suggest .ac_over,
+      body .squares-jipiao-suggest li a:hover {
+        background-color: #338fff;
+        color: #fff;
+      }
+      body .squares-jipiao-suggest .ac_over a {
+        color: #fff;
+      }
+      body .squares-ijipiao-layer {
+        width: 403px;
+      }
+      body .squares-ijipiao-suggest li {
+        height: 26px;
+        line-height: 26px;
+        overflow: hidden;
+      }
+      body .squares-ijipiao-suggest li a {
+        padding: 0;
+        overflow: hidden;
+      }
+      body .squares-ijipiao-suggest li a .city-r {
+        display: none;
+      }
+      body .squares-ijipiao-suggest li a span {
+        display: inline;
+        padding: 0 5px;
+        float: none;
+      }
+      .squares-focus-hover-style {
+        position: relative;
+        border-color: #e40015 !important;
+        z-index: 5;
+      }
+      .ac_results {
+        background: #fff;
+        border: 1px solid #7f9db9;
+        position: absolute;
+        zoom: 1;
+        z-index: 999;
+        display: none;
+        *width: 330px;
+      }
+      .ac_results ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .ac_results li a {
+        white-space: nowrap;
+        text-decoration: none;
+        display: block;
+        color: #05a;
+        padding: 1px 3px;
+      }
+      .ac_results li {
+        border: 1px solid #fff;
+        line-height: 20px;
+        font-size: 12px;
+      }
+      .ac_results .ac_over,
+      .ac_results li a:hover {
+        background: #80c3ff;
+        color: #fff;
+      }
+      .ac_results li a span {
+        float: right;
+        padding-left: 10px;
+      }
+      .ac_result_tip {
+        border-bottom: 1px dashed #666;
+        padding: 3px;
+        font-size: 12px;
+      }
+      .ac_results .red {
+        padding-left: 5px;
+        color: #c00;
+      }
+      .ac_result_null {
+        background-color: #b00;
+        color: #fff;
+        overflow: hidden;
+      }
+    </style>
+    <div id="squares-jipiao">
+      <ul class="squares-tab clearfix">
+        <li class="jp-tab current" clstag="h|keycount|head|shortcut_02a">
+          <a href="//jipiao.jd.com" target="_blank">国内机票</a>
+        </li>
+        <li class="jp-tab" clstag="h|keycount|head|shortcut_02b">
+          <a href="//ijipiao.jd.com" target="_blank">国际/港澳台</a>
+        </li>
+        <li class="jp-tab last" clstag="h|keycount|head|shortcut_02c">
+          <a
+            href="https://sale.jd.com/act/KCBkw7PiLMbGZWS.html?cpdad=1DLSUE"
+            target="_blank"
+            >特惠</a
+          >
+        </li>
+      </ul>
+      <div class="squares-main">
+        <div class="squares-content">
+          <ul class="tab-content clearfix" style="margin-left: 0px;">
+            <li class="jp-content jp-content-gn">
+              <div class="select-type clearfix">
+                <label
+                  ><input
+                    type="radio"
+                    name="flighttype"
+                    class="flight-type gnjp-single-cls"
+                    checked="checked"
+                    clstag="h|keycount|head|shortcut_02a01"
+                  />
+                  <span>单程</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="flighttype"
+                    class="flight-type j-back-trip gnjp-double-cls"
+                    clstag="h|keycount|head|shortcut_02a02"
+                  />
+                  <span>往返</span></label
+                >
+              </div>
+              <div class="select-city clearfix">
+                <div class="city-area">
+                  <input
+                    type="text"
+                    class="start-city gnjp-src-cls"
+                    value=""
+                    placeholder="城市"
+                    clstag="h|keycount|head|shortcut_02a03"
+                    autocomplete="off"
+                    style="color: rgb(170, 170, 170);"
+                  />
+                  <span class="area-title">出发</span>
+                </div>
+                <span class="change-city">&nbsp;</span>
+                <div class="city-area last-city-area">
+                  <input
+                    type="text"
+                    class="end-city gnjp-dest-cls"
+                    value=""
+                    placeholder="城市"
+                    clstag="h|keycount|head|shortcut_02a04"
+                    autocomplete="off"
+                    style="color: rgb(170, 170, 170);"
+                  />
+                  <span class="area-title">到达</span>
+                </div>
+              </div>
+              <div class="select-date clearfix">
+                <div class="date-area">
+                  <input
+                    type="text"
+                    class="start-date gnjp-srcDate-cls"
+                    placeholder="出发"
+                    readonly="readonly"
+                    clstag="h|keycount|head|shortcut_02a05"
+                    style="color: rgb(170, 170, 170);"
+                  />
+                  <span class="area-title">日期</span>
+                  <input
+                    type="text"
+                    class="end-date gnjp-destDate-cls"
+                    placeholder="返程"
+                    readonly="readonly"
+                    clstag="h|keycount|head|shortcut_02a06"
+                    style="color: rgb(170, 170, 170);"
+                  />
+                </div>
+              </div>
+              <div class="search-jp">
+                <a
+                  href="javascript:void(0);"
+                  id="search-jp-gn"
+                  class="search-jp-btn"
+                  clstag="h|keycount|head|shortcut_02a07"
+                  >机票查询</a
+                >
+                <span class="gn-word-ad"
+                  ><a
+                    href="http://ccc-x.jd.com/dsp/cpd?ext=aHR0cHM6Ly9qaXBpYW8uamQuY29tLw&amp;log=JF5rMUAKXlLMuE_-1qw2RKwu9W82n03RnztIpYfC-NUJnP7A5v6VUsfpDag9vEA61DV2IA68GLaJVJQVsrKxytaHubWzWi0jw9nviY1coDboFSwQi2_u_uCKxbyVqt3kiNlE05Qku2ANSU0ual15okoJhh4oI1Uzt4HN80gPGikbygY0FoOyJJnATIFe6hyp-YuB1MR99Ttsh96wFmIJ_n-8Kc_zbq9-45jpQIW_Mj66Palyg32DVoq0TV5p7ODFxmcESgfZLGf80QUNKVxjVhFj5Z-wcTiDK4NtWtn6cPqLX4NpieJiAVVfGzTHemNiOih2mL9NHp5L194gbMSnSD-7bytozPBD1cluFhj4BEvwl0oe8PhjxUZhMk9Ukw21wOSCaqF0r48s9eBAcYnM_mKwcg5sHs2ZI9qkNfNss94CYj5VxNUSyADfx410NDLWeRkmVoHyC5LNBai444talcfprLIw2_8cZRXU60aYcENuIDbBA7rhl0OXTXp4XQKz4rqzd9Q17_tOsBnNr1dVnSO7GYX-8pHKaJYCSObX6u6mw9SfOhV9FnG9I1vIu2NGaC4VPIBRNyMvR4TUxnMhJ3k2u_RShEKVw6935srqwzQHTIUfpeh0cvtWmgoF_IjXhxhMyaXgb64HDpiQ3zQQ9sytpb5lcMdhWZzck_vLc1I"
+                    target="_blank"
+                    class="search-tip"
+                    clstag="h|keycount|head|shortcut_02a08"
+                    >当季热门特惠机票
+                  </a></span
+                >
+              </div>
+            </li>
+            <li class="jp-content jp-content-gj">
+              <div class="select-type clearfix">
+                <label
+                  ><input
+                    type="radio"
+                    name="gjflighttype"
+                    class="flight-type gjjp-single-cls"
+                    checked="checked"
+                    clstag="h|keycount|head|shortcut_02b01"
+                  />
+                  <span>单程</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="gjflighttype"
+                    class="flight-type j-back-trip gjjp-double-cls"
+                    clstag="h|keycount|head|shortcut_02b02"
+                  />
+                  <span>往返</span></label
+                >
+              </div>
+              <div class="select-city clearfix">
+                <div class="city-area">
+                  <input
+                    type="text"
+                    class="start-city gjjp-src-cls"
+                    placeholder="城市"
+                    id="gjdepCity"
+                    clstag="h|keycount|head|shortcut_02b03"
+                    autocomplete="off"
+                    style="color: rgb(170, 170, 170);"
+                  />
+                  <span class="area-title">出发</span>
+                </div>
+                <span class="change-city">&nbsp;</span>
+                <div class="city-area last-city-area">
+                  <input
+                    type="text"
+                    class="end-city gjjp-dest-cls"
+                    placeholder="城市"
+                    id="gjarrCity"
+                    clstag="h|keycount|head|shortcut_02b04"
+                    autocomplete="off"
+                    style="color: rgb(170, 170, 170);"
+                  />
+                  <span class="area-title">到达</span>
+                </div>
+              </div>
+              <div class="select-date clearfix">
+                <div class="date-area">
+                  <input
+                    type="text"
+                    class="start-date gjjp-srcDate-cls"
+                    placeholder="出发"
+                    readonly="readonly"
+                    clstag="h|keycount|head|shortcut_02b05"
+                    style="color: rgb(170, 170, 170);"
+                  />
+                  <span class="area-title">日期</span>
+                  <input
+                    type="text"
+                    class="end-date gjjp-destDate-cls"
+                    placeholder="返程"
+                    readonly="readonly"
+                    clstag="h|keycount|head|shortcut_02b06"
+                    style="color: rgb(170, 170, 170);"
+                  />
+                </div>
+              </div>
+              <div class="search-jp">
+                <a
+                  href="javascript:void(0);"
+                  id="search-jp-gj"
+                  class="search-jp-btn"
+                  clstag="h|keycount|head|shortcut_02b07"
+                  >机票查询</a
+                >
+                <span class="gj-word-ad"
+                  ><a
+                    href="http://ccc-x.jd.com/dsp/cpd?ext=aHR0cDovL2lqaXBpYW8uamQuY29tLw&amp;log=JF5rMUAKXlLMuE_-1qw2RKwu9W82n03RnztIpYfC-NUJnP7A5v6VUsfpDag9vEA61DV2IA68GLaJVJQVsrKxytaHubWzWi0jw9nviY1coDY04ASWqBZyUnie3wWFzvJ6h6J7wNgDY5oF3z4xim59ryBJ1xG-_4MRA4l7bfcXCFWUxYyfKfypAxPU3uWFrixhRcqwmVQROYZhpQYMaCX2aZp11MJZMZ6r6HBGa2YkOGXeb-GqaiBcLnYb3UpzJZckz_phaR_ypk330MRgbQLQYclFsjWmum-21mxTGt9t8BoWnOPQ49M16hHovFZ_YZefgxMAZ5CZT9hrFa35DYPGFdYAnN8lV9nHfTBViQ45VIjxGmSBCbzYaUG_e_5mviLmyR_SZKf55vHqBg91ePo1eT8RABY2FTF2KtwUetfX2CgK27lOdVsqBYddX8PwIj8EL0DEO5boTn-bZItRTVNZVBrUoSFrKIQseyztdwBVSMwnRG1f7GgT8r5g8z2L1yxyH_ZA1cpU_yWem_P4y0H1Xojx8aMX23q0T_Gh86FL0kSSGDobslXQhdAahHHI1tQLChJfxXpZMij_7x-9h1hkjxuIaJ9Xw1GOzGGJj-Gs-MtMNw2KsXaRdUjYmO6cDWy168LoFIs95T5eVxRmrwy2cqBD_TXDvY5YO-S1ismHJsA"
+                    target="_blank"
+                    class="search-tip"
+                    clstag="h|keycount|head|shortcut_02b08"
+                    >国际机票任性搜
+                  </a></span
+                >
+              </div>
+            </li>
+            <li class="jp-content">
+              <div class="jp-ads clearfix">
+                <span class="ad-left-img"
+                  ><a
+                    href="http://ccc-x.jd.com/dsp/cpd?ext=aHR0cHM6Ly9wcm8uamQuY29tL21hbGwvYWN0aXZlLzNReEtDZHpaSGZOaDNwRGI4Ulo4UWZOb1E1aTkvaW5kZXguaHRtbA&amp;log=JF5rMUAKXlLMuE_-1qw2RKwu9W82n03RnztIpYfC-NUJnP7A5v6VUsfpDag9vEA61DV2IA68GLaJVJQVsrKxytaHubWzWi0jw9nviY1coDYfSM4jIcUt_Gx2xfiQ__Vu-YB5FsR_QuSmO1nbxqFTazQ7FIrPVm7_zk7LkuixpLXtV4sxy7io0hGCdmF8P3jkupMQjVy4EenCcpQgMMN0td7IaN7oDTAb4vaO0V_E5mb1Zste7_9fAzV5Nrkcq5d3MSmT8cHAFNaReMIiKdE-XuU7WnWrNIFAP-oJKLPGdRFOP46EKdPl0Xi7wIEnHfggxEqyF-kqZfz6mHCDCeATnllOQ32gOT0NEbgxr8APltUlVnPpIXhKPdb9BmTisDcqrA0dioCuqkL8yLm2PH-z5z0w0MB4j6TIROO4bnvRiPfgXFvCFK1XlyGeD1mH-X7VuX5ctXlzePdBiclqjWOGr3t9eLY_pCOCBi9lz4bigIwLWd4mZ5Uch_Gi5alw2Qksw_hdeN2YKR4161KqzlgC0W-Dmnp1uFlcGYCslQ6tLIpquOZvoeO5C9Va2aGwva4LbkAt8r2nXBw0opDZ44YF3pcrrvHUlJReWkqMsMIyYI9x4Wq-CDDtMQZwyGcG96LU07ItO26NgqC1JwCLl702P1qM0siJR-bBjmKhr5P5IFI"
+                    class="jp-ad"
+                    target="_blank"
+                    clstag="h|keycount|head|shortcut_02c01"
+                    title=""
+                    style="float:left;"
+                    ><img
+                      src="//img10.360buyimg.com/da/jfs/t1/84424/23/240/48087/5ce6b097Ef33f724f/04650a324ab7d04a.jpg"
+                      alt=""
+                      width="79"
+                      height="119"/></a
+                ></span>
+                <span class="ad-right-img"
+                  ><a
+                    href="http://ccc-x.jd.com/dsp/cpd?ext=aHR0cHM6Ly9zYWxlLmpkLmNvbS9hY3QvS0NCa3c3UGlMTWJHWldTLmh0bWw&amp;log=JF5rMUAKXlLMuE_-1qw2RKwu9W82n03RnztIpYfC-NUJnP7A5v6VUsfpDag9vEA61DV2IA68GLaJVJQVsrKxytaHubWzWi0jw9nviY1coDa-RR3Z_CUGK2aQ6mFD4H0ysev-Ec1q_hLy12BfmQP7QOmlZ8yopx6xhvHS_HMNJyaxGxkyKKbcloe6Gbc9CDpjqFx0BjDdmxu5YN723QTMkqRlKPJ9hAd_Ed4QY7LbQzjW_ciCoWkOaME0AxXmrbs7i3J5rKWNGQnzrML0gpk588L-7RDlChtaQ6KkVSUC-R7Kj0lUK9WWuopvqaXW2hzkuGdrMmQpo2PwWSslOwyWnUYsKWmH1x1NEuqBV06SAjth2KxqhKm7za4rTmhrveia2Di8lq08n3YyuLbQFhhr49Br4pZ0p-v-JsrcT7v9L1Yoy3lTcZiwtKuymP5HXCq3dcAh1ka3FKaCaH6BUOWWt1Oy6e6fn7bEYxggKIOPoZQD__T_mNiEAQ9qegD0PAn3swQf39UhM2oCI3GKCML_y9I5konaMiDcS3mBCQCihlkFjUFMXsKdRurVvIOHjtddT4vSYL5RJ0_3Bq-fHBkIGVPaebTR_U8BXvYvVLFzTQ-CublkwmLHPx6XWJblmSW12DJUjut2EVyJqA-uvh-kLIisBMLThbwnORxw_wvETvk"
+                    class="jp-ad"
+                    target="_blank"
+                    clstag="h|keycount|head|shortcut_02c02"
+                    title=""
+                    style="float:right;"
+                    ><img
+                      src="//img13.360buyimg.com/da/jfs/t17449/40/1869807400/27231/32d8d86d/5ad864baN5950aa1b.jpg"
+                      alt=""
+                      width="79"
+                      height="119"/></a
+                ></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mod_tab_content_item service_pop_item" style="display: none;">
+    <style>
+      /* virtuals-squares/2.0/ hotel.css Date:2018-01-03 16:44:05 */
+      #squares-hotel {
+        margin: 0 auto;
+        width: 160px;
+        height: 180px;
+        color: #666;
+        font-family: "Microsoft Yahei";
+      }
+      #squares-hotel .loading-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 199px;
+        height: 120px;
+        margin: -60px 0 0 -100px;
+      }
+      #squares-hotel .squares-tab {
+        padding: 12px 0 0;
+        position: static;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+      }
+      #squares-hotel .squares-tab li {
+        float: left;
+        position: relative;
+        display: inline;
+        line-height: 16px;
+        *line-height: 18px;
+        white-space: nowrap;
+        height: 21px;
+        margin-right: 14px;
+        *margin-right: 2px;
+        width: auto;
+        border: 0;
+        overflow: auto;
+        cursor: default;
+      }
+      #squares-hotel .squares-tab li a {
+        text-decoration: none;
+        line-height: 18px;
+        display: inline;
+        padding-top: 0;
+        text-align: left;
+      }
+      #squares-hotel .squares-tab li.last {
+        margin-right: 0;
+      }
+      #squares-hotel .squares-tab li.current a {
+        color: #e40015;
+      }
+      #squares-hotel .squares-main {
+        padding: 5px 0 0;
+        position: relative;
+        zoom: 1;
+        height: 138px;
+      }
+      #squares-hotel .squares-content {
+        height: 138px;
+        width: 160px;
+        overflow: hidden;
+        position: relative;
+        zoom: 1;
+      }
+      #squares-hotel .tab-content {
+        width: 696px;
+        height: 138px;
+        overflow: hidden;
+      }
+      #squares-hotel .hotel-content {
+        float: left;
+        display: inline;
+        height: 138px;
+        width: 190px;
+        border: 0;
+        overflow: hidden;
+        cursor: default;
+      }
+      #squares-hotel .city-area {
+        float: left;
+        display: inline;
+        width: 190px;
+        height: 20px;
+        margin-bottom: 5px;
+        position: relative;
+        zoom: 1;
+        _width: auto;
+        _height: auto;
+      }
+      #squares-hotel .city-area .end-date,
+      #squares-hotel .city-area .select-area,
+      #squares-hotel .city-area .start-city,
+      #squares-hotel .city-area .start-date {
+        width: 103px;
+        height: 18px;
+        line-height: 20px;
+        border: 1px solid #e7e7e7;
+        padding: 0;
+        color: #c2c2c2;
+        margin-left: 55px;
+        *margin-left: 45px;
+        font-family: inherit;
+        text-indent: 0.75em;
+        font-size: 12px;
+      }
+      #squares-hotel .city-area .end-date:hover,
+      #squares-hotel .city-area .select-area:hover,
+      #squares-hotel .city-area .start-city:hover,
+      #squares-hotel .city-area .start-date:hover {
+        border-color: #338fff;
+      }
+      #squares-hotel .city-area .end-date:focus,
+      #squares-hotel .city-area .select-area:focus,
+      #squares-hotel .city-area .start-city:focus,
+      #squares-hotel .city-area .start-date:focus {
+        outline: 0;
+      }
+      #squares-hotel .city-area .end-date,
+      #squares-hotel .city-area .start-date {
+        font-family: "Microsoft Yahei";
+      }
+      #squares-hotel .city-area .date-hover {
+        border: 1px solid #c81623;
+        border-bottom: 1px solid #fff;
+      }
+      #squares-hotel .city-area .area-title {
+        height: 20px;
+        line-height: 16px;
+        color: #666;
+        position: absolute;
+        top: 1px;
+        *top: 2px;
+        left: 1px;
+        width: 55px;
+      }
+      #squares-hotel .city-area .select-area {
+        color: #999;
+        width: 158px;
+        margin-left: 0;
+        *margin-left: -9px;
+        text-align: center;
+      }
+      #squares-hotel .change-city {
+        position: relative;
+        float: left;
+        display: inline;
+        width: 16px;
+        height: 16px;
+        top: 18px;
+        background: url(//misc.360buyimg.com/virtuals/squares/1.0/css/i/change-city-new.jpg)
+          no-repeat 0 0;
+        margin-left: 9px;
+        cursor: pointer;
+        _font-size: 200px;
+        _overflow: hidden;
+      }
+      #squares-hotel .change-city-hover {
+        background: url(//misc.360buyimg.com/virtuals/squares/1.0/css/i/change-city-new-hover.png)
+          no-repeat 0 0;
+      }
+      #squares-hotel .select-city {
+        _height: 112px;
+        _overflow: hidden;
+      }
+      #squares-hotel .select-date {
+        margin-bottom: 4px;
+        height: 56px;
+      }
+      #squares-hotel .select-date .date-area {
+        *margin-top: 5px;
+      }
+      #squares-hotel .search-jp {
+        clear: both;
+        height: 20px;
+        padding-top: 5px;
+      }
+      #squares-hotel .search-jp .search-hotel-btn {
+        float: left;
+        width: 60px;
+        height: 20px;
+        line-height: 18px;
+        color: #fff;
+        text-align: center;
+        background-color: #e40015;
+        display: inline-block;
+        border-radius: 10px;
+        *display: inline;
+        *zoom: 1;
+        margin-right: 25px;
+        padding: 0;
+      }
+      #squares-hotel .search-jp .search-tip {
+        outline: 0;
+        color: #527cdb;
+        line-height: 20px;
+        display: inline;
+        padding-top: 0;
+        text-align: left;
+      }
+      #squares-hotel .search-jp .search-tip:hover {
+        color: #c81623;
+      }
+      #squares-hotel .search-jp .search-tip:hover .search-tip-icon {
+        background-image: url(//misc.360buyimg.com/virtuals/squares/1.0/css/i/arrow-news-hover.png);
+      }
+      #squares-hotel .search-jp .search-tip-icon {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 7px;
+        height: 11px;
+        background: url(//misc.360buyimg.com/virtuals/squares/1.0/css/i/arrow-news.png)
+          no-repeat 0 0;
+        text-indent: -999em;
+        vertical-align: middle;
+        _margin-bottom: -7px;
+        _position: relative;
+        _bottom: -2px;
+      }
+      #squares-hotel .search-jp .gj-word-ad,
+      #squares-hotel .search-jp .gn-word-ad {
+        display: inline-block;
+        width: 105px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      #squares-hotel .search-jp .squares-new {
+        display: none;
+      }
+      #squares-hotel .hotel-ads {
+        width: 160px;
+      }
+      #squares-hotel .hotel-ads a {
+        display: inline;
+        width: auto;
+        height: auto;
+        padding: 0;
+        line-height: normal;
+        text-align: left;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      #squares-hotel .hotel-ads img {
+        width: 75px !important;
+        height: 96px !important;
+      }
+      #squares-hotel .return-date {
+        width: 168px;
+      }
+      #squares-hotel .return-date .start-date {
+        float: left;
+        width: 49px;
+        *margin-top: 1px;
+      }
+      #squares-hotel .return-date .end-date {
+        float: left;
+        display: inline;
+        width: 55px;
+        *margin-top: 1px;
+        border-left: none;
+        padding-left: 8px;
+        letter-spacing: -1px;
+      }
+      .squares-focus-hover-style {
+        border-color: #338fff !important;
+      }
+      input::-ms-clear {
+        display: none;
+      }
+      body .squares-hotel-calendar {
+        border-radius: 0;
+        border-color: #ddd;
+        margin-top: -1px;
+        font-family: "Microsoft Yahei";
+        padding: 6px 2px;
+        padding-bottom: 0;
+        height: 253px;
+        overflow: hidden;
+      }
+      body .squares-hotel-calendar tfoot {
+        display: none;
+      }
+      body .squares-hotel-calendar .ui-calendar-table {
+        border-collapse: collapse;
+      }
+      body .squares-hotel-calendar .ui-calendar-left {
+        border-right: 0;
+        margin-right: 10px;
+      }
+      body .squares-hotel-calendar .ui-calendar-double .ui-calendar-left {
+        border-right: 0;
+      }
+      body .squares-hotel-calendar .ui-calendar-table th {
+        font-weight: 400;
+        color: #666;
+      }
+      body .squares-hotel-calendar .ui-calendar-table .next i,
+      body .squares-hotel-calendar .ui-calendar-table .prev i {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 5px;
+        height: 9px;
+        background: url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/calendar.jpg)
+          no-repeat 0 0;
+        float: left;
+        margin-left: 3px;
+        margin-top: -7px;
+      }
+      body .squares-hotel-calendar .ui-calendar-table .next,
+      body .squares-hotel-calendar .ui-calendar-table .prev {
+        padding: 5px 0;
+      }
+      body .squares-hotel-calendar .ui-calendar-table .next:hover i,
+      body .squares-hotel-calendar .ui-calendar-table .prev:hover i {
+        background-image: url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/calendar-hover.png);
+      }
+      body .squares-hotel-calendar .ui-calendar-table .switch {
+        position: relative;
+        top: -3px;
+        font-size: 14px;
+        color: #666;
+      }
+      body .squares-hotel-calendar .ui-calendar-table .next i {
+        background-position: -5px 0;
+        float: right;
+        margin-right: 3px;
+      }
+      body .squares-hotel-calendar .ui-calendar-table .next:hover,
+      body .squares-hotel-calendar .ui-calendar-table .prev:hover {
+        background: #fff;
+      }
+      body .squares-hotel-calendar .ui-calendar-table td,
+      body .squares-hotel-calendar .ui-calendar-table th {
+        border-radius: 0;
+        padding: 3px 5px;
+      }
+      body .squares-hotel-calendar .ui-calendar-table td {
+        padding: 5px;
+        border-bottom: 1px dotted #ececec;
+      }
+      body .squares-hotel-calendar .ui-calendar-table tbody td {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      body .squares-hotel-calendar .ui-calendar-table tbody td a {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 34px;
+        height: 21px;
+        line-height: 21px;
+      }
+      body .squares-hotel-calendar .ui-calendar-table .active,
+      body .squares-hotel-calendar .ui-calendar-table .active .festival,
+      body .squares-hotel-calendar .ui-calendar-table .active:hover {
+        background: 0 0;
+      }
+      body .squares-hotel-calendar .ui-calendar-table .active a,
+      body .squares-hotel-calendar .ui-calendar-table .active:hover a {
+        background: #c81623;
+        color: #fff;
+      }
+      body .squares-hotel-calendar .calendar-date {
+        background-color: #f5f5f5;
+      }
+      body .squares-hotel-calendar .calendar-date th {
+        padding: 8px 0;
+        border-bottom: 1px solid #ececec;
+        border-top: 1px dotted #e4e4e4;
+      }
+      body .squares-hotel-calendar .ui-calendar-table tbody .range,
+      body .squares-hotel-calendar .ui-calendar-table tbody .range .festival {
+        color: #999;
+      }
+      body .squares-hotel-calendar .ui-calendar-table td {
+        width: 34px;
+      }
+      body .squares-hotel-calendar .squares-hotel-styleline {
+        position: absolute;
+        width: 101px;
+        height: 0;
+        line-height: 0;
+        border-top: 1px solid #fff;
+        left: 11px;
+        top: -1px;
+        z-index: 100;
+      }
+      .search-pannel {
+        height: 128px;
+        min-width: 990px;
+        width: 100%;
+        padding-bottom: 127px;
+        border: 1px solid #e5e5e5;
+        font-family: "Microsoft Yahei";
+        color: #666;
+        background: url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/searchboxbg.png)
+          no-repeat left bottom;
+      }
+      .search-pannel .mt {
+        height: 30px;
+        line-height: 30px;
+        padding: 28px 0 23px 20px;
+      }
+      .search-pannel .mt h3 {
+        float: left;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      .search-pannel .mt .return-hotel-chanel {
+        float: right;
+        width: auto;
+        padding-right: 26px;
+        color: #2e90ff;
+        font-size: 14px;
+      }
+      .search-pannel .mt .return-hotel-chanel em {
+        padding-left: 3px;
+        font-family: "Microsoft Yahei";
+        font-weight: 700;
+      }
+      .search-pannel .mc {
+        height: 47px;
+        padding: 0 19px;
+      }
+      .search-pannel .mc ul {
+        float: left;
+      }
+      .search-pannel li {
+        position: relative;
+        float: left;
+        height: 45px;
+        margin-right: 8px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        font-size: 12px;
+        line-height: 17px;
+      }
+      .search-pannel li .tit {
+        height: 18px;
+        margin: 14px 0 0 8px;
+        color: #999;
+        float: left;
+      }
+      .search-pannel li .hide {
+        display: none;
+      }
+      .search-pannel li .keyword-tip {
+        height: 17px;
+        padding: 14px 8px;
+        color: #ccc;
+        width: 242px;
+        display: inline-block;
+        _display: inline;
+        _zoom: 1;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+      }
+      .search-pannel li input {
+        height: 17px;
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #333;
+        font-family: "Microsoft Yahei";
+        outline: 0;
+        border: 0;
+        background: 0;
+        cursor: text;
+        z-index: 1;
+        box-sizing: content-box;
+      }
+      .search-pannel .min-item {
+        width: 158px;
+      }
+      .search-pannel .min-item input {
+        width: 86px;
+        padding: 14px 20px 14px 52px;
+      }
+      .search-pannel .mid-item {
+        width: 188px;
+      }
+      .search-pannel .mid-item input {
+        width: 74px;
+        padding: 14px 50px 14px 64px;
+      }
+      .search-pannel .max-item {
+        width: 258px;
+      }
+      .search-pannel .max-item input {
+        width: 242px;
+        padding: 14px 8px;
+      }
+      .search-pannel .dp-info {
+        float: right;
+        margin-top: 14px;
+        height: 18px;
+        width: auto;
+        *width: 55px;
+        line-height: 20px;
+        color: #999;
+        font-size: 12px;
+      }
+      .search-pannel .dp-info span {
+        float: right;
+      }
+      .search-pannel .dp-info i.ico {
+        float: right;
+        width: 22px;
+        height: 20px;
+      }
+      .search-pannel .ico {
+        background-image: url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/icons.png);
+        background-repeat: no-repeat;
+      }
+      .search-pannel .adress i {
+        background-position: 0 0;
+      }
+      .search-pannel .e-time i,
+      .search-pannel .s-time i {
+        background-position: -56px 1px;
+      }
+      .search-pannel .button {
+        height: 47px;
+        width: 118px;
+        float: left;
+      }
+      .search-pannel .button a {
+        width: 100%;
+        height: 100%;
+        border-radius: 2px;
+        background-color: #ff872e;
+        color: #fff;
+        font-size: 16px;
+        line-height: 47px;
+        text-align: center;
+        display: inline-block;
+        _display: inline;
+        _zoom: 1;
+      }
+      .search-pannel .button a:hover {
+        background-color: #ff692e;
+      }
+      .search-pannel .baitiao {
+        padding: 56px 0 0 510px;
+      }
+      .search-pannel .baitiao a {
+        height: 20px;
+        width: auto;
+        display: inline-block;
+        _display: inlline;
+        _zoom: 1;
+        color: #2e90ff;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+      .search-pannel .baitiao a em {
+        padding-left: 3px;
+        font-family: "Microsoft Yahei";
+        font-weight: 700;
+      }
+      .recommend {
+        position: absolute;
+        border: 1px solid #ccc;
+        z-index: 8;
+        background: #fff;
+        overflow: hidden;
+        display: none;
+        width: 350px;
+      }
+      .recommend .tab {
+        border-bottom: 1px solid #c7d8e3;
+        padding: 0 5px;
+        overflow: visible;
+        _overflow: hidden;
+        height: 24px;
+      }
+      .recommend .tab li {
+        float: left;
+        line-height: 24px;
+        text-align: center;
+        height: 26px;
+        overflow: hidden;
+        display: inline;
+        zoom: 1;
+        position: relative;
+        padding: 0 5px;
+      }
+      .recommend .tab li b,
+      .recommend .tab li s {
+        width: 5px;
+        height: 24px;
+        position: absolute;
+        top: 0;
+      }
+      .recommend .tab li s {
+        left: 0;
+      }
+      .recommend .tab li b {
+        right: 0;
+      }
+      .recommend .tab li.curr {
+        height: 24px;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        background: #fff;
+      }
+      .recommend .tab li.curr a:link,
+      .recommend .tab li.curr a:visited {
+        color: #c00;
+        font-size: 12px;
+      }
+      .recommend .tab a:link,
+      .recommend .tab a:visited {
+        color: #666;
+        font-size: 12px;
+      }
+      .recommend .text {
+        padding: 5px;
+      }
+      .recommend .mc1 {
+        padding: 9px 0 8px 8px;
+      }
+      .recommend .mc1 a {
+        width: 42px;
+        float: left;
+        line-height: 24px;
+        height: 24px;
+        overflow: hidden;
+      }
+      .recommend .mc1 .fl {
+        width: 10px;
+        line-height: 24px;
+        color: #c00;
+        margin-right: 5px;
+      }
+      .recommend .mt_text {
+        line-height: 29px;
+        padding: 3px 8px;
+      }
+      .recommend .fl {
+        float: left;
+        width: 10px;
+      }
+      .recommend .fn {
+        float: left;
+        width: 320px;
+      }
+      .recommend a:link,
+      .recommend a:visited {
+        color: #005ea7;
+        text-decoration: none;
+      }
+      .area-dialog {
+        position: absolute;
+        z-index: 100;
+        width: 324px;
+        padding: 0 12px;
+        background-color: #fff;
+        border: 1px solid #d0d0d0;
+        font-family: "Microsoft Yahei";
+      }
+      .area-dialog dl {
+        border-top: 1px solid #d0d0d0;
+        padding: 5px 0;
+        line-height: 22px;
+        margin-top: -1px;
+      }
+      .area-dialog dl dt {
+        width: 100%;
+        font-weight: 700;
+      }
+      .area-dialog dl dd a {
+        float: left;
+        height: 22px;
+        padding-right: 14px;
+        color: #458bcd;
+        white-space: nowrap;
+      }
+      .area-dialog dl dd a:hover {
+        color: #458bcd;
+        text-decoration: underline;
+      }
+      .ac_results {
+        background: #fff;
+        border: 1px solid #7f9db9;
+        position: absolute;
+        zoom: 1;
+        z-index: 999;
+        display: none;
+        *width: 330px;
+      }
+      .ac_results ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .ac_results li a {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-decoration: none;
+        display: block;
+        color: #05a;
+        padding: 1px 3px;
+      }
+      .ac_results li {
+        border: 1px solid #fff;
+        line-height: 20px;
+        font-size: 12px;
+      }
+      .ac_results .ac_over,
+      .ac_results li a:hover {
+        background: #80c3ff;
+        color: #fff;
+      }
+      .ac_results li a span {
+        float: right;
+        padding-left: 10px;
+      }
+      .ac_result_tip {
+        border-bottom: 1px dashed #666;
+        padding: 3px;
+        font-size: 12px;
+      }
+      .ac_results .red {
+        padding-left: 5px;
+        color: #c00;
+      }
+      .ac_result_null {
+        background-color: #b00;
+        color: #fff;
+        overflow: hidden;
+      }
+    </style>
+    <div id="squares-hotel">
+      <ul class="squares-tab clearfix">
+        <li class="hotel-tab current" clstag="h|keycount|head|shortcut_03a">
+          <a href="//hotel.jd.com" target="_blank">国内/港澳台</a>
+        </li>
+        <li class="hotel-tab last" clstag="h|keycount|head|shortcut_03b">
+          <a
+            href="https://pro.jd.com/mall/active/2rLCzbRVhKViS64TnfEY1aCXFvCC/index.html"
+            target="_blank"
+            >促销活动</a
+          >
+        </li>
+      </ul>
+      <div class="squares-main">
+        <div class="squares-content">
+          <ul class="tab-content clearfix" style="margin-left: 0px;">
+            <li class="hotel-content hotel-content-gn">
+              <div class="city-area">
+                <input
+                  id="sqgn-City"
+                  type="text"
+                  class="start-city"
+                  value=""
+                  placeholder="请输入目的地"
+                  maxlength="10"
+                  style="color: rgb(194, 194, 194);"
+                  clstag="h|keycount|head|shortcut_03a01"
+                  autocomplete="off"
+                  data-val="824297"
+                  data-choose="北京"
+                />
+                <span class="area-title">目的地</span>
+              </div>
+              <div class="select-date">
+                <div class="city-area">
+                  <input
+                    id="sqgn-start"
+                    type="text"
+                    class="start-date"
+                    value=""
+                    readonly="readonly"
+                    placeholder="入住日期"
+                    data-val="2019-05-28"
+                    style="color: rgb(194, 194, 194);"
+                    clstag="h|keycount|head|shortcut_03a02"
+                  />
+                  <span class="area-title">入住日期</span>
+                </div>
+                <div class="city-area">
+                  <input
+                    id="sqgn-end"
+                    type="text"
+                    class="end-date"
+                    value=""
+                    readonly="readonly"
+                    placeholder="离店日期"
+                    data-val="2019-05-29"
+                    style="color: rgb(194, 194, 194);"
+                    clstag="h|keycount|head|shortcut_03a03"
+                  />
+                  <span class="area-title">离店日期</span>
+                </div>
+              </div>
+              <div class="city-area">
+                <input
+                  id="sqgn-area"
+                  type="text"
+                  class="select-area"
+                  value=""
+                  placeholder="酒店 / 商圈 / 地标"
+                  autocomplete="off"
+                  clstag="h|keycount|head|shortcut_03a04"
+                />
+              </div>
+              <div class="search-jp">
+                <a
+                  href="javascript:void(0);"
+                  id="search-hotel-gn"
+                  class="search-hotel-btn"
+                  clstag="h|keycount|head|shortcut_03a05"
+                  >酒店查询</a
+                >
+                <span class="gn-word-ad"
+                  ><a
+                    href="http://ccc-x.jd.com/dsp/cpd?ext=aHR0cHM6Ly9ob3RlbC5qZC5jb20v&amp;log=JF5rMUAKXlLMuE_-1qw2RKwu9W82n03RnztIpYfC-NUJnP7A5v6VUsfpDag9vEA61DV2IA68GLaJVJQVsrKxytaHubWzWi0jw9nviY1coDbXxCSuJ5P8TRTwM46_m9IVqRdBv4cPKjIso5gm3CxF2-vRbmZoh5KXhSsRrHh_D2dGh_vS-xFPY6jn5_NnDLYll_hbpC3mWjcdGsVj__SbNMcMcQ2ytY7Iot39NV6hrFt8XjthWvgOysaNhNU_l7PhikvFubo0dZPn36cN8Sng-FrG1FBKAZ30gHE4AAtpwr7ZB22Gswo-ALGDrAGSZ6tvTmR8EmLj1R_8xAVurTMIngZqRbnjHHJqJSHTFCDZ40JQtXK_nRFPRSIaBPN5uyUHBzDrNg4_HLTivTafBCQKK9G_JXCJd4Bj0O1Fth0bKnVOmiUENnYz-OE6W8hOIgivxW3W3nQeRpIb6zD82xEVMuA_rq-Uswo-cFllZLwSibMexumD5tLsr0Lmc2zP5sErqtlI9n2nxWnazCLkKqIC3Ekw_iLuu2Fvai8uOvrmxsG9JMzT1sed-kRtvuv4BSMAk614LXt2GKnFseMqWHGDSluWee_7RB-3H0RXM2kbN1fKTBYXg1FTcNh2f262ugRf6LKfYvqtOLNEOdWUZzH_dS2OHVS0FVhT8n3mBFBFVuY"
+                    target="_blank"
+                    class="search-tip"
+                    clstag="h|keycount|head|shortcut_03a06"
+                    >订酒店上京东
+                  </a></span
+                >
+              </div>
+            </li>
+            <li class="hotel-content">
+              <div class="hotel-ads clearfix">
+                <span class="ad-left-img"
+                  ><a
+                    href="http://ccc-x.jd.com/dsp/cpd?ext=aHR0cHM6Ly9wcm8uamQuY29tL21hbGwvYWN0aXZlLzQ1cmNId0VweFlnTnZmdjJvbVNiNG5odkplbnMvaW5kZXguaHRtbA&amp;log=JF5rMUAKXlLMuE_-1qw2RKwu9W82n03RnztIpYfC-NUJnP7A5v6VUsfpDag9vEA61DV2IA68GLaJVJQVsrKxytaHubWzWi0jw9nviY1coDb9sBp-ntP47srrF9jMZUV3TPDx5ucA2ASg2LY8ZEZfV9S160lBFcOCYAJwR-GeiCRVg-vGxmRKFtYyvlpGVrI6hLXlurHMBUQXxJaa1BsSfnBWgCfOvM5RhG66UzUw3Oq_4YthmSIRp28A28QiTXOL1ba_T6BtAtOF3H7KFA0bRo-NaqFwMqFfYNvVRN3R-Otyt2tq1NPsppbqsRG2W3bI2B2Z3v0BGZMMevmaKBLCqerrs7vm9vz3kNjBcYianpcbmymRq3Yirh1m1stpybu3Aapy75ovXzoMRrSWthoSlr-Gm4yDi-lX6FUbsKcOxBju4n2paEEpRKFmDYAdzTHJjI7NRMKp09EsvZyGkeFUHBnnUvH9wEgRWphYLnE5T_2_Idf3MgBfnZlRylUWw3AGZg2TgwsKJrKm44BmxGGDzBSwvpc9X_qVoyswe7LWuD0fxnxD8pauGN1amxYYdkwEeVJNiHsgMv6Bz8-MQUCwCKruBmXWvBazhrqdJkEatt8X1X53JfrAzBN8EgzqjNO9SkdJGu8c03yuOhqAkBLL8_K6PA3okmkXIE9OvlQZDhU"
+                    class="hotel-ad"
+                    target="_blank"
+                    clstag="h|keycount|head|shortcut_03b01"
+                    title=""
+                    style="float:left;"
+                    ><img
+                      src="//img20.360buyimg.com/da/jfs/t1/49353/31/701/8069/5ce68f98E8caa0e75/d8067966213e4d7f.jpg"
+                      alt=""
+                      width="80"
+                      height="120"/></a
+                ></span>
+                <span class="ad-right-img"
+                  ><a
+                    href="http://ccc-x.jd.com/dsp/cpd?ext=aHR0cHM6Ly9iZ3lob3RlbC5qZC5jb20vP2NwZGFkPTFETFNVRQ&amp;log=JF5rMUAKXlLMuE_-1qw2RKwu9W82n03RnztIpYfC-NUJnP7A5v6VUsfpDag9vEA61DV2IA68GLaJVJQVsrKxytaHubWzWi0jw9nviY1coDaPt5VBTjuJCiGzxShq7kw4D4M89YlNM7m97tJMOTZ-PDUMzsO0XKPQ-D9CDL7C-m-fZ5NckRuADt3_iLnFj0sRF0h6TdQOGnEUmUc0DMacWnbTmw2i7nIK-QUGJCh8zG4jny53Whppox5CFjCFJnm9zWCwRewgGJkC7eM1RY6HOTBD-hEVuXdeBMXiDL4kMjdONo3DmgbV2Ny2XtpdbfjqHlQUnfnzd06UAE86_oBU60zPwtX1i6_yCI7__oP6SP0oAkUhYCIZazV0Cy0aeIBpot_ww5seIsXvEmLKpoeWCw3x894VVK80ZwZOVzY2IVJQWhwsxWHgY908gbg-qK4NmaR2a_zxfITCnq03MuZA6kdJlvM9TbY6VYfTHNGXW6SZ4ZxxpjUyblqEvsDzQJQfoaisRpeoQibheRE4dCXS9E5OMnnWqsyLqt0VjUynPMpYUz33HjA82MS2TI9aNNWcmE0v5zTigRIO-FxI1KwOtHVnSS4kCRhOIEWonJLwk3I_m6tenInED-SvHsNMrLw0BU7Za-ooQj4avT7YtcSAKx0GUwbI1kgQu92d_-gWKkE"
+                    class="hotel-ad"
+                    target="_blank"
+                    clstag="h|keycount|head|shortcut_03b02"
+                    title=""
+                    style="float:right;"
+                    ><img
+                      src="//img12.360buyimg.com/da/jfs/t1/5618/5/5736/9065/5ba0c704Eb7af04de/113259177db2af6d.jpg"
+                      alt=""
+                      width="80"
+                      height="120"/></a
+                ></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mod_tab_content_item service_pop_item" style="display: none;">
+    <style>
+      /* virtuals-squares/2.0/ game.css Date:2018-06-17 13:38:53 */
+      #squares-game {
+        width: 160px;
+        height: 180px;
+        color: #666;
+        font-family: "Microsoft Yahei";
+      }
+      #squares-game input::-ms-clear {
+        display: none;
+      }
+      #squares-game .loading-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 199px;
+        height: 120px;
+        margin: -60px 0 0 -100px;
+      }
+      #squares-game .squares-tab {
+        padding: 12px 0 0;
+        position: static;
+        width: 180px;
+        height: auto;
+        overflow: hidden;
+      }
+      #squares-game .squares-tab li {
+        float: left;
+        position: relative;
+        display: inline;
+        line-height: 16px;
+        *line-height: 18px;
+        white-space: nowrap;
+        height: 21px;
+        margin-right: 25px;
+        width: auto;
+        border: 0;
+        overflow: auto;
+        cursor: default;
+      }
+      #squares-game .squares-tab li a {
+        text-decoration: none;
+        line-height: 18px;
+        display: inline;
+        padding-top: 0;
+        text-align: left;
+      }
+      #squares-game .squares-tab li.current a {
+        color: #e40015;
+      }
+      #squares-game .squares-main {
+        padding: 4px 0 0;
+        position: relative;
+        zoom: 1;
+        height: 135px;
+      }
+      #squares-game .squares-content {
+        height: 135px;
+        width: 180px;
+        overflow: hidden;
+        position: relative;
+        zoom: 1;
+      }
+      #squares-game .tab-content {
+        width: 696px;
+        height: 135px;
+        overflow: hidden;
+      }
+      #squares-game .jp-content {
+        float: left;
+        display: inline;
+        height: 135px;
+        width: 180px;
+        border: 0;
+        overflow: hidden;
+        cursor: default;
+      }
+      #squares-game .select-type {
+        margin-bottom: 10px;
+        line-height: 1;
+      }
+      #squares-game .select-type label {
+        margin-right: 5px;
+        height: 15px;
+        line-height: 15px;
+      }
+      #squares-game .select-type label input {
+        margin: 0;
+        vertical-align: middle;
+      }
+      #squares-game .city-area {
+        height: 20px;
+        position: relative;
+        zoom: 1;
+      }
+      #squares-game .city-area .end-city,
+      #squares-game .city-area .end-date,
+      #squares-game .city-area .start-city {
+        width: 126px;
+        height: 18px;
+        line-height: 20px;
+        border: 1px solid #e7e7e7;
+        padding: 0;
+        color: #666;
+        margin-left: 34px;
+        font-family: inherit;
+        text-align: center;
+      }
+      #squares-game .city-area .end-city:hover,
+      #squares-game .city-area .start-city:hover {
+        border-color: #338fff;
+      }
+      #squares-game .city-area .end-city:focus,
+      #squares-game .city-area .start-city:focus {
+        outline: 0;
+      }
+      #squares-game .city-area .start-city {
+        color: #c2c2c2;
+        background: #fff
+          url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/select-icon.png)
+          no-repeat 154px center;
+      }
+      #squares-game .city-area .end-date,
+      #squares-game .city-area .start-date {
+        font-family: "Microsoft Yahei";
+      }
+      #squares-game .city-area .date-hover {
+        border: 1px solid #c81623;
+        border-bottom: 1px solid #fff;
+      }
+      #squares-game .city-area .area-title {
+        height: 20px;
+        line-height: 20px;
+        color: #666;
+        position: absolute;
+        top: 1px;
+        *top: 2px;
+        left: 1px;
+        width: 34px;
+      }
+      #squares-game .date-area .area-title {
+        display: inline-block;
+        float: left;
+        height: 20px;
+        line-height: 20px;
+        color: #666;
+        width: 34px;
+      }
+      #squares-game .date-area .start-date {
+        float: left;
+        width: 126px;
+        height: 18px;
+        line-height: 20px;
+        border: 1px solid #e7e7e7;
+        padding: 0;
+        color: #666 !important;
+        font-family: inherit;
+        background: #fff
+          url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/select-icon.png)
+          no-repeat 115px center;
+        text-indent: 0.5em;
+      }
+      #squares-game .date-area .start-date:hover {
+        border-color: #338fff;
+      }
+      #squares-game .date-area .start-date:focus {
+        outline: 0;
+      }
+      #squares-game .date-area .game-money {
+        float: left;
+        display: inline-block;
+        height: 12px;
+        line-height: 12px;
+        color: #e40015;
+        margin: 10px 0;
+        *padding-bottom: 6px;
+      }
+      #squares-game .back-date {
+        margin-left: 26px;
+      }
+      #squares-game .change-city {
+        float: left;
+        display: inline;
+        width: 16px;
+        height: 16px;
+        background: url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/change-city.jpg)
+          no-repeat 0 0;
+        margin: 5px;
+        cursor: pointer;
+        _font-size: 200px;
+        _overflow: hidden;
+      }
+      #squares-game .change-city-hover {
+        background: url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/change-city-hover.png)
+          no-repeat 0 0;
+      }
+      #squares-game .select-city {
+        margin-bottom: 9px;
+        _height: 27px;
+        _overflow: hidden;
+      }
+      #squares-game .search-jp .search-jp-btn {
+        float: left;
+        *display: inline;
+        *zoom: 1;
+        width: 60px;
+        height: 20px;
+        margin-right: 5px;
+        line-height: 20px;
+        *line-height: 18px;
+        color: #fff;
+        text-align: center;
+        background-color: #e40015;
+        display: inline-block;
+        padding: 0;
+        border-radius: 10px;
+      }
+      #squares-game .search-jp .squares-disabled {
+        border: 1px solid #ddd;
+        background-color: #f6f6f6;
+        color: #333;
+      }
+      #squares-game .search-jp .search-tip {
+        outline: 0;
+        color: #5476db;
+        display: inline-block;
+        padding-top: 0;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100px;
+      }
+      #squares-game .search-jp .search-tip:hover {
+        color: #c81623;
+      }
+      #squares-game .search-jp .search-tip:hover .search-tip-icon {
+        background-image: url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/arrow-news-hover.png);
+      }
+      #squares-game .search-jp .search-tip-icon {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 7px;
+        height: 11px;
+        background: url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/arrow-news.png)
+          no-repeat 0 0;
+        text-indent: -999em;
+        vertical-align: middle;
+        _margin-bottom: -7px;
+        _position: relative;
+        _bottom: -2px;
+      }
+      #squares-game .search-jp .squares-new {
+        display: none;
+      }
+      #squares-game .jp-ads {
+        padding-top: 5px;
+        width: 160px;
+      }
+      #squares-game .jp-ads a {
+        display: inline;
+        width: auto;
+        height: auto;
+        padding: 0;
+        line-height: normal;
+        text-align: left;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      #squares-game .jp-ads img {
+        width: 75px !important;
+        height: 96px !important;
+      }
+      #squares-game .jp-content-gv .city-area .area-title {
+        width: 62px;
+      }
+      #squares-game .jp-content-gv .city-area .start-city {
+        width: 97px;
+        margin-left: 62px;
+      }
+      #squares-game .jp-content-gv .date-area .area-title {
+        width: 62px;
+      }
+      #squares-game .jp-content-gv .date-area .start-date {
+        width: 97px;
+        background: #fff
+          url(//misc.360buyimg.com/virtuals/squares/2.0/css/i/select-icon.png)
+          no-repeat 85px center;
+      }
+      .squares-game-money,
+      .squares-qq-content,
+      .squares-qq-money,
+      .squares-video-money {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        width: 189px;
+        background: #fff;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        overflow: hidden;
+        margin-top: -1px;
+      }
+      .squares-game-money a:link,
+      .squares-game-money a:visited,
+      .squares-qq-content a:link,
+      .squares-qq-content a:visited,
+      .squares-qq-money a:link,
+      .squares-qq-money a:visited,
+      .squares-video-money a:link,
+      .squares-video-money a:visited {
+        text-decoration: none;
+        color: #666;
+      }
+      .squares-game-money a:hover,
+      .squares-qq-content a:hover,
+      .squares-qq-money a:hover,
+      .squares-video-money a:hover {
+        color: #c81623;
+      }
+      .squares-game-money ul li,
+      .squares-qq-content ul li,
+      .squares-qq-money ul li,
+      .squares-video-money ul li {
+        float: left;
+        display: inline;
+        width: 52px;
+        padding: 0 5px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #ccc;
+        margin-left: -1px;
+        margin-top: -1px;
+        cursor: pointer;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .squares-game-money ul li:hover a,
+      .squares-qq-content ul li:hover a,
+      .squares-qq-money ul li:hover a,
+      .squares-video-money ul li:hover a {
+        color: #c81623;
+      }
+      .squares-game-layer {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        width: 350px;
+        background: #fff;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        margin-top: -1px;
+      }
+      .squares-game-layer a:link,
+      .squares-game-layer a:visited {
+        text-decoration: none;
+        color: #666;
+      }
+      .squares-game-layer .tab {
+        padding-left: 10px;
+        height: 21px;
+        overflow: visible;
+        _overflow: hidden;
+      }
+      .squares-game-layer .tab a:link,
+      .squares-game-layer .tab a:visited {
+        font-size: 12px;
+        color: #666;
+      }
+      .squares-game-layer .tab li {
+        display: inline;
+        position: relative;
+        _zoom: 1;
+        width: 65px;
+        float: left;
+        margin-right: 1px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        background-color: #e6e6e6;
+        overflow: hidden;
+      }
+      .squares-game-layer .tab li.curr {
+        height: 20px;
+        background: #c81623;
+      }
+      .squares-game-layer .tab li.curr a:link,
+      .squares-game-layer .tab li.curr a:visited {
+        font-size: 12px;
+        color: #fff;
+      }
+      .squares-game-layer .text {
+        padding: 5px;
+      }
+      .squares-game-layer .mc1 {
+        padding: 7px 0 5px 12px;
+        overflow: hidden;
+      }
+      .squares-game-layer .mc1 a {
+        float: left;
+        width: 81px;
+        text-indent: 6px;
+        line-height: 23px;
+        height: 23px;
+        margin-bottom: 2px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .squares-game-layer .mc1 a:hover {
+        color: #c81623;
+      }
+      .squares-game-layer .mc1 .fl {
+        width: 9px;
+        line-height: 24px;
+        color: #c00;
+        margin-left: 3px;
+      }
+      .squares-game-layer .mc1 .fn {
+        overflow: hidden;
+      }
+      .squares-game-layer .mc1 .clr {
+        border-top: 1px dotted #e6e6e6;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .squares-game-layer .mt_text {
+        padding: 8px 10px 2px;
+        line-height: 26px;
+        color: #999;
+      }
+      body .squares-game-suggest {
+        border: 1px solid #ccc;
+        margin-top: -1px;
+      }
+      body .squares-game-suggest .ac_result_tip {
+        display: none;
+      }
+      body .squares-game-suggest .ac_result_null {
+        background: #fff;
+        padding-left: 2px;
+        color: #c81623;
+      }
+      body .squares-game-suggest li {
+        border: 0;
+      }
+      body .squares-game-suggest li a {
+        color: #000;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      body .squares-game-suggest .ac_over,
+      body .squares-game-suggest li a:hover {
+        background-color: #338fff;
+        color: #fff;
+      }
+      body .squares-game-suggest .ac_over a {
+        color: #fff;
+      }
+      body .squares-game-layer {
+        width: 350px;
+      }
+      body .squares-game-suggest li {
+        height: 26px;
+        line-height: 26px;
+        overflow: hidden;
+        padding-left: 8px;
+      }
+      body .squares-game-suggest li a {
+        padding: 0;
+        overflow: hidden;
+      }
+      body .squares-game-suggest li a .city-r {
+        display: none;
+      }
+      body .squares-game-suggest li a span {
+        display: inline;
+        padding: 0 5px;
+        float: none;
+      }
+      .ac_results {
+        background: #fff;
+        border: 1px solid #7f9db9;
+        position: absolute;
+        zoom: 1;
+        z-index: 999;
+        display: none;
+        *width: 330px;
+      }
+      .ac_results ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .ac_results li a {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-decoration: none;
+        display: block;
+        color: #05a;
+        padding: 1px 3px;
+      }
+      .ac_results li {
+        border: 1px solid #fff;
+        line-height: 20px;
+        font-size: 12px;
+      }
+      .ac_results .ac_over,
+      .ac_results li a:hover {
+        background: #80c3ff;
+        color: #fff;
+      }
+      .ac_results li a span {
+        float: right;
+        padding-left: 10px;
+      }
+      .ac_result_tip {
+        border-bottom: 1px dashed #666;
+        padding: 3px;
+        font-size: 12px;
+      }
+      .ac_results .red {
+        padding-left: 5px;
+        color: #c00;
+      }
+      .ac_result_null {
+        background-color: #b00;
+        color: #fff;
+        overflow: hidden;
+      }
+      .type-layer {
+        position: absolute;
+        z-index: 100;
+        width: 350px;
+        background: #fff;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        margin-top: -1px;
+        padding-bottom: 10px;
+      }
+      .type-layer .type-nav-wrap {
+        padding: 10px 10px 0;
+        height: 21px;
+        overflow: visible;
+        _overflow: hidden;
+      }
+      .type-layer .type-nav-wrap a {
+        display: inline;
+        position: relative;
+        _zoom: 1;
+        width: 65px;
+        float: left;
+        margin-right: 1px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        background-color: #e6e6e6;
+        overflow: hidden;
+      }
+      .type-layer .type-nav-wrap a:hover {
+        color: #666;
+      }
+      .type-layer .type-nav-wrap a.curr {
+        height: 20px;
+        background: #c81623;
+        color: #fff;
+      }
+      .type-layer .type-nav-wrap a.curr:hover {
+        color: #fff;
+      }
+      .type-layer .type-tab-wrap {
+        padding: 5px 10px 10px;
+      }
+      .type-layer .type-tab-wrap a {
+        float: left;
+        width: 81px;
+        text-indent: 6px;
+        line-height: 23px;
+        height: 23px;
+        margin-bottom: 2px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .type-layer .type-tab-wrap a:hover {
+        color: #c81623;
+      }
+      .type-layer .type-tab-wrap .tab-content {
+        display: none;
+      }
+    </style>
+    <div id="squares-game">
+      <ul class="squares-tab clearfix">
+        <li
+          class="game-tab jp-tab current"
+          clstag="h|keycount|head|shortcut_04a"
+        >
+          <a href="//card.jd.com/?type=shiyu" target="_blank">视频/娱乐</a>
+        </li>
+        <li class="game-tab jp-tab" clstag="h|keycount|head|shortcut_04b">
+          <a href="//card.jd.com/" target="_blank">点卡</a>
+        </li>
+        <li class="game-tab jp-tab" clstag="h|keycount|head|shortcut_04c">
+          <a href="//card.jd.com/?type=qq" target="_blank">QQ</a>
+        </li>
+      </ul>
+      <div class="squares-main">
+        <div class="squares-content">
+          <ul class="tab-content clearfix" style="margin-left: 0px;">
+            <li class="jp-content jp-content-gv">
+              <div class="select-city clearfix">
+                <div class="city-area">
+                  <input
+                    type="text"
+                    class="start-city video-cls"
+                    placeholder="类型"
+                    style="color: rgb(153, 153, 153);"
+                  />
+                  <span class="area-title">服务类型</span>
+                </div>
+              </div>
+              <div class="select-date clearfix">
+                <div class="date-area">
+                  <span class="area-title">充值时长</span>
+                  <input
+                    type="text"
+                    class="start-date face-cls"
+                    placeholder="时长"
+                    readonly="readonly"
+                    clstag="h|keycount|head|shortcut_04a02"
+                    style="color: rgb(153, 153, 153);"
+                  />
+                  <span class="game-money"
+                    >¥<span class="game-money-result">0.00</span></span
+                  >
+                </div>
+              </div>
+              <div class="select-type clearfix">
+                <label class="game-method-zc"
+                  ><input
+                    type="radio"
+                    name="shiyutype"
+                    class="flight-type video-zc-cls"
+                    checked="checked"
+                    value="2"
+                  />
+                  <span>直充</span></label
+                >
+                <label class="game-method-km"
+                  ><input
+                    type="radio"
+                    name="shiyutype"
+                    class="flight-type j-back-trip video-km-cls"
+                    value="1"
+                  />
+                  <span>卡密</span></label
+                >
+              </div>
+              <div class="search-jp">
+                <a
+                  href="javascript:void(0);"
+                  id="squares-search-video"
+                  class="search-jp-btn"
+                  >快速充值</a
+                >
+              </div>
+            </li>
+            <li class="jp-content jp-content-gn">
+              <div class="select-city clearfix">
+                <div class="city-area">
+                  <input
+                    type="text"
+                    class="start-city game-cls"
+                    placeholder="游戏"
+                    clstag="h|keycount|head|shortcut_04a01"
+                    autocomplete="off"
+                    style="color: rgb(153, 153, 153);"
+                  />
+                  <span class="area-title">游戏</span>
+                </div>
+              </div>
+              <div class="select-date clearfix">
+                <div class="date-area">
+                  <span class="area-title">面值</span>
+                  <input
+                    type="text"
+                    class="start-date face-cls"
+                    placeholder="面值"
+                    readonly="readonly"
+                    clstag="h|keycount|head|shortcut_04a02"
+                    style="color: rgb(153, 153, 153);"
+                  />
+                  <span class="game-money"
+                    >¥<span class="game-money-result">0.00</span></span
+                  >
+                </div>
+              </div>
+              <div class="select-type clearfix">
+                <label class="game-method-zc"
+                  ><input
+                    type="radio"
+                    name="gametype"
+                    class="flight-type chong-cls"
+                    checked="checked"
+                    value="2"
+                    clstag="h|keycount|head|shortcut_04a03"
+                  />
+                  <span>直充</span></label
+                >
+                <label class="game-method-km"
+                  ><input
+                    type="radio"
+                    name="gametype"
+                    class="flight-type j-back-trip pwd-cls"
+                    value="1"
+                    clstag="h|keycount|head|shortcut_04a04"
+                  />
+                  <span>卡密</span></label
+                >
+              </div>
+              <div class="search-jp">
+                <a
+                  href="javascript:void(0);"
+                  clstag="h|keycount|head|shortcut_04a05"
+                  id="squares-search-game"
+                  class="search-jp-btn"
+                  >快速充值</a
+                >
+                <span class="card-word-ad"
+                  ><a
+                    href="http://ccc-x.jd.com/dsp/cpd?ext=aHR0cHM6Ly9wcm8uamQuY29tL21hbGwvYWN0aXZlLzRQR29MNW1ETWc2elhGMVZ4VTJZdExhZ000QXkvaW5kZXguaHRtbA&amp;log=JF5rMUAKXlLMuE_-1qw2RKwu9W82n03RnztIpYfC-NUJnP7A5v6VUsfpDag9vEA61DV2IA68GLaJVJQVsrKxytaHubWzWi0jw9nviY1coDaBWaItBxySAFrpAkS_XqKqruHrAlHT0hj6MPkj6YoF_YTdZv1ZHDj9bYDFRC04ev5ylnx9yT3ApjKkHa4qrJFQ-VqXQLtejWh2VHvfewafn3UJpQzsM3tGc3ldXNCCnL4AFFgkFRq-h62_BQl68v8YEnzvBFYh_HV9CyiCpnJATRdRGeNa7Q_kqMYo9y2pYPEoQXrLBtXI6nu-jr2JULMuu635cbA6JCt7comcdRfsEBvPqTVQ1xOmLWTfhRR7_ljU3EeOH9d9AUAjx5BhB45R-ytn6xYEYpo_zvlIswzCV-XqnFsKTFVr8IeH6IEn2zWrpin8WLHeZe6F7dAjXW7Wf2wDV2boQ5Gbp-pUPLyYkIoGarIFEVXuwQslj1jB_-oK4qacZQQkt1hDu40cPY1t9Q14KrlGYH2-fucye4KyGYc7afrKuVHadZTmKjSRShnPSsuGgysnLaMUIBGqvjZvYYNV1ej6k3MjWrY4GFTa3xJUgp23it3yuIb8lbfkJHaLVAic4cih2itA1Tr8c-0stw_WLzeqzFbjCOzoLYtIdRKx2FIhfOFrP86mrkqgO-Y"
+                    target="_blank"
+                    class="search-tip"
+                    clstag="h|keycount|head|shortcut_04a06"
+                    >抢5折神券
+                  </a></span
+                >
+              </div>
+            </li>
+            <li class="jp-content jp-content-gj">
+              <div class="select-city clearfix">
+                <div class="city-area">
+                  <input
+                    type="text"
+                    class="start-city qq-cls"
+                    placeholder="QQ"
+                    clstag="h|keycount|head|shortcut_04b01"
+                    style="color: rgb(34, 34, 34);"
+                  />
+                  <span class="area-title">QQ</span>
+                </div>
+              </div>
+              <div class="select-date clearfix">
+                <div class="date-area">
+                  <span class="area-title">面值</span>
+                  <input
+                    type="text"
+                    class="start-date qq-face-cls"
+                    placeholder="面值"
+                    readonly="readonly"
+                    clstag="h|keycount|head|shortcut_04b02"
+                    style="color: rgb(102, 102, 102);"
+                  />
+                  <span class="game-money"
+                    >¥<span class="game-money-result">0.96</span></span
+                  >
+                </div>
+              </div>
+              <div class="select-type clearfix">
+                <label class="game-method-zc" style="display: inline;"
+                  ><input
+                    type="radio"
+                    name="qqtype"
+                    class="flight-type qq-chong-cls"
+                    checked="checked"
+                    value="2"
+                    clstag="h|keycount|head|shortcut_04b03"
+                  />
+                  <span>直充</span></label
+                >
+                <label class="game-method-km" style="display: none;"
+                  ><input
+                    type="radio"
+                    name="qqtype"
+                    class="flight-type j-back-trip qq-pwd-cls"
+                    value="1"
+                    clstag="h|keycount|head|shortcut_04b04"
+                  />
+                  <span>卡密</span></label
+                >
+              </div>
+              <div class="search-jp">
+                <a
+                  href="javascript:void(0);"
+                  id="squares-search-qq"
+                  class="search-jp-btn"
+                  clstag="h|keycount|head|shortcut_04b05"
+                  >快速充值</a
+                >
+                <span class="qq-word-ad"
+                  ><a
+                    href="http://ccc-x.jd.com/dsp/cpd?ext=aHR0cHM6Ly9wcm8uamQuY29tL21hbGwvYWN0aXZlLzRQR29MNW1ETWc2elhGMVZ4VTJZdExhZ000QXkvaW5kZXguaHRtbA&amp;log=JF5rMUAKXlLMuE_-1qw2RKwu9W82n03RnztIpYfC-NUJnP7A5v6VUsfpDag9vEA61DV2IA68GLaJVJQVsrKxytaHubWzWi0jw9nviY1coDaBWaItBxySAFrpAkS_XqKqruHrAlHT0hj6MPkj6YoF_YTdZv1ZHDj9bYDFRC04ev5ylnx9yT3ApjKkHa4qrJFQ-VqXQLtejWh2VHvfewafn3UJpQzsM3tGc3ldXNCCnL4AFFgkFRq-h62_BQl68v8YEnzvBFYh_HV9CyiCpnJATRdRGeNa7Q_kqMYo9y2pYPEoQXrLBtXI6nu-jr2JULMuu635cbA6JCt7comcdRfsEBvPqTVQ1xOmLWTfhRR7_ljU3EeOH9d9AUAjx5BhB45R-ytn6xYEYpo_zvlIswzCV-XqnFsKTFVr8IeH6IEn2zWrpin8WLHeZe6F7dAjXW7Wf2wDV2boQ5Gbp-pUPLyYkIoGarIFEVXuwQslj1jB_-oK4qacZQQkt1hDu40cPY1t9Q14KrlGYH2-fucye4KyGYc7afrKuVHadZTmKjSRShnPSsuGgysnLaMUIBGqvjZvYYNV1ej6k3MjWrY4GFTa3xJUgp23it3yuIb8lbfkJHaLVAic4cih2itA1Tr8c-0stw_WLzeqzFbjCOzoLYtIdRKx2FIhfOFrP86mrkqgO-Y"
+                    target="_blank"
+                    class="search-tip"
+                    clstag="h|keycount|head|shortcut_04b06"
+                    >抢5折神券
+                  </a></span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="J_service_pop_close service_pop_close iconfont" href="javascript:;"
+    ></a
+  >
+</div>

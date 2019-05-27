@@ -29,9 +29,7 @@
     <script type="text/javascript" src="js/jquery-1.12.1.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script>
-      $(function(){
-        
-      });
+
     </script>
   </head>
   <body>
@@ -293,9 +291,11 @@
         </div>
         <!-- 搜索栏部分 -->
         <div class="search">
-          <input type="text" value="你喜欢的" />
+          <div class="search_bg">你喜欢的</div>
+          <input type="text" class="text" id="key" />
           <button class="iconfont"></button>
-          <a href="javascript:void(0);"><span class="upload-bg"></span></a>
+          <span class="upload-bg"></span>
+          <ul id="shelper"></ul><!-- 搜索下拉菜单 -->
         </div>
         <!-- 热词部分 -->
         <div class="hotwords">
@@ -311,9 +311,17 @@
         </div>
         <!-- 购物车部分 -->
         <div class="settleup">
-          <i class="iconfont style-red"></i>
-          <a href="#" class="style-red">我的购物车</a>
-          <i class="shopping_amount">0</i>
+          <div class="cw-icon">
+            <i class="iconfont style-red"></i>
+            <a href="#" class="style-red">我的购物车</a>
+            <i class="shopping_amount">0</i>
+          </div>
+          <div class="dropdown-layer">
+            <div id="J_cart_pop" class="cart_pop">
+              <!-- 没有商品的时候显示 -->
+              <!-- 有商品的时候显示 -->
+            </div>
+          </div>
         </div>
         <!-- 主题导航部分 -->
         <div class="navitems">
@@ -343,14 +351,33 @@
     <div class="jd">
       <div class="w">
         <!-- the ad part -->
-        <div class="ad">
-          <a href="#">
-            <img src="images/ad.png" alt="广告" />
-          </a>
+        <div class="ad-box">
+          <div class="ad">
+            <a href="javascript:void(0);">
+              <img src="images/ad.png" alt="广告" />
+            </a>
+          </div>
+          <div class="ad-body">
+            <a href="javascript:void(0);">
+              <img src="images/ad-body.jpg" alt="广告" />
+            </a>
+          </div>
         </div>
         <!-- the cate_menu part -->
         <div class="jd-col1 fl">
           <ul></ul><!-- 左侧边导航栏 -->
+          <div class="cate_pop">
+            <div class="cate_part">
+              <div class="cate_part_col1">
+                <div class="cate_channel"></div><!-- 渠道大类 -->
+                <div class="cate_detail"></div><!-- 小分类 -->
+              </div>
+              <div class="cate_part_col2">
+                <div class="cate_brand"></div><!-- 品牌小图 -->
+                <div class="cate_promotion"></div><!-- 品牌大图 -->
+              </div>
+            </div>
+          </div>
         </div>
         <div class="clearfix jd-col-group">
           <!-- the 轮播图 part -->
@@ -416,81 +443,8 @@
               </div>
             </div>
             <!-- the service part -->
-            <div class="service">
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="iconfont"></i>
-                    <span>机票</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="iconfont"></i>
-                    <span>机票</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="iconfont"></i>
-                    <span>机票</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="iconfont"></i>
-                    <span>机票</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="iconfont"></i>
-                    <span>机票</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="iconfont"></i>
-                    <span>机票</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="iconfont"></i>
-                    <span>机票</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="iconfont"></i>
-                    <span>机票</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="iconfont"></i>
-                    <span>机票</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="iconfont"></i>
-                    <span>机票</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="iconfont"></i>
-                    <span>机票</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="iconfont"></i>
-                    <span>机票</span>
-                  </a>
-                </li>
-              </ul>
+            <div class="service" id="service">
+              <ul></ul>
             </div>
           </div>
         </div>

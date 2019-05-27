@@ -102,7 +102,7 @@ input {
   border: 1px solid #ccc;/* 确保样式能够覆盖所有权重 */
   border-bottom: 0; 
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 .shortcut .dt{ /* dt公共样式 */
   border: 1px solid rgba(0, 0, 0, 0); /* 确保显示的时候周围的元素不会移动 */
@@ -111,7 +111,7 @@ input {
 .dropdown-layer{/* 下拉列表公共样式 */
   background-color: #fff;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   box-shadow: 1px 2px 1px rgba(0,0,0,.1);
   border: 1px solid #ccc;
   display: none;
